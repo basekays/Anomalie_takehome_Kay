@@ -4,7 +4,11 @@ import SurveyFormConstants from '../constants/SurveyFormConstants';
 import TextField from '@material-ui/core/TextField';
 
 const { BUTTON, DEFAULT, DESCRIPTION, LABELS, NOT_AVAILABLE } = SurveyFormConstants;
-const today = new Date().toISOString().split('T')[0];
+
+// Default date on the date picker
+let defaultDate = new Date();
+defaultDate.setMonth(defaultDate.getMonth() + 7);
+defaultDate = defaultDate.toISOString().split('T')[0];
 
 class SurveyItemWeddingDate extends React.Component {
   state = {
@@ -37,7 +41,7 @@ class SurveyItemWeddingDate extends React.Component {
         <form className='date' noValidate>
           <TextField
             className='weddingDate'
-            defaultValue={today}
+            defaultValue={defaultDate}
             id="date"
             onChange={this.handleChange}
             style={{marginTop: '30px'}}
