@@ -1,7 +1,6 @@
 import AppBar from '@material-ui/core/AppBar';
 import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
-// import { Grid } from 'semantic-ui-react';
 import Grid from '@material-ui/core/Grid';
 import ProgressBar from './ProgressBar';
 import React, { Component } from 'react';
@@ -32,23 +31,23 @@ class SurveyForm extends React.Component {
 
   updateBudget(userInput) {
     this.setState({
-      budget: userInput,
       activeStep: 1,
       backToBudget: false,
+      budget: userInput,
     });
   }
 
   updateSilhouette(userInput) {
     this.setState({
-      silhouette: userInput,
       activeStep: 2,
+      silhouette: userInput,
     });
   }
 
   updateWeddingDate(userInput) {
     this.setState({
-      weddingDate: userInput,
       activeStep: 3,
+      weddingDate: userInput,
     });
   }
 
@@ -86,29 +85,27 @@ class SurveyForm extends React.Component {
   }
 
   render() {
-    const { budget, silhouette, weddingDate, completionRate} = this.state;
+    const { budget, completionRate, silhouette, weddingDate} = this.state;
     return (
       <div style={{backgroundColor: "#f4f2f0ff"}}>
-        <AppBar position="relative" color="white">
+        <AppBar color="white" position="relative">
           <Toolbar style={{marginLeft: 'auto', marginRight: 'auto'}}>
-            <Typography variant="h6" color="inherit">
+            <Typography color="inherit" variant="h6">
               {NAME}
             </Typography>
           </Toolbar>
         </AppBar>
         <ProgressBar activeStep={this.state.activeStep}/>
         <div style={{flexGrow: 1}}>
-          <Grid container spacing={24} justify='center'>
+          <Grid container justify='center' spacing={24}>
             <Grid item xs={12} sm={12} md={10} lg={6}>
-              <Grid>
-                <Card className='card' style={{marginTop: '10px'}}>
-                  <CardContent>
-                    <Typography variant="h6" color="inherit">
-                      {this.renderSurveyItems()}
-                    </Typography>
-                  </CardContent>
-                </Card>
-              </Grid>
+              <Card className='card' style={{marginTop: '10px'}}>
+                <CardContent>
+                  <Typography color="inherit" variant="h6">
+                    {this.renderSurveyItems()}
+                  </Typography>
+                </CardContent>
+              </Card>
             </Grid>
           </Grid>
         </div>

@@ -45,20 +45,19 @@ class SurveyItemSilhouette extends React.Component {
 
     return (
       availableOptions.map((style) =>
-        <GridListTile key={style} cols={1} style={{height: '350px', padding: '20px'}}>
+        <GridListTile cols={1} key={style} style={{height: '370px', padding: '10px'}}>
           <img
-            src={SILHOUETTE[style]['IMG']}
             onClick={() => {this.handleClick(SILHOUETTE[style]['NAME'])}}
+            src={SILHOUETTE[style]['IMG']}
           />
           <GridListTileBar
-            title={SILHOUETTE[style]['NAME']}
             actionIcon={
               <Tooltip
                 title={
                   selectedSilhouettes.includes(SILHOUETTE[style]['NAME'])
                   ? TOOLTIP.REMOVE : TOOLTIP.ADD
                 }
-              >
+                >
                 <FormControlLabel
                   control={
                     <Checkbox
@@ -69,9 +68,10 @@ class SurveyItemSilhouette extends React.Component {
                       onChange={() => {this.handleClick(SILHOUETTE[style]['NAME'])}}
                       />
                   }
-                />
+                  />
               </Tooltip>
             }
+            title={SILHOUETTE[style]['NAME']}
           />
         </GridListTile>
       )
@@ -113,7 +113,7 @@ class SurveyItemSilhouette extends React.Component {
 
   render() {
     return (
-      <div style={{ textAlign: 'center' }}>
+      <div style={{textAlign: 'center'}}>
         <h2 style={{marginBottom: '20px'}}>{LABELS.SILHOUETTE}</h2>
         <h3 style={{marginBottom: '20px'}}>{DESCRIPTION.SILHOUETTE}</h3>
         {
@@ -145,7 +145,7 @@ class SurveyItemSilhouette extends React.Component {
         </Button>
         <Button
           variant="contained"
-          style={{marginTop: '20px', marginBottom: '20px'}}
+          style={{marginBottom: '20px', marginTop: '20px'}}
           onClick={() => this.handleSubmit()}
         >
           {BUTTON.SAVE_AND_CONTINUE}

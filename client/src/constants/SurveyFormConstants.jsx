@@ -35,20 +35,20 @@ const SurveyFormConstants = {
   NOT_AVAILABLE: 'N/A',
   SILHOUETTE: {
     SHEATH: {
-      NAME: 'Sheath',
       IMG: 'https://www.lulusbridal.com/wp-content/uploads/2017/09/Maggie-Sottero-Wedding-Dress-Kirstie-6MS193-alt1.jpg',
+      NAME: 'Sheath',
     },
     FIT_FLARE: {
-      NAME: 'Fit-Flare',
       IMG: 'https://ms-cdn.maggiesottero.com/product/Content/Images/73532/Large/Maggie-Sottero-Wedding-Dress-Callie-7MS359-Main.jpg',
+      NAME: 'Fit-Flare',
     },
     A_LINE: {
-      NAME: 'A-Line',
       IMG: 'https://www.bridesselection.com.au/wp-content/uploads/2017/07/MaggieSottero-Morocco-7MN902.jpg',
+      NAME: 'A-Line',
     },
     BALL_GOWN: {
-      NAME: 'Ball Gown',
       IMG: 'https://www.topweddingsites.com/wedding-blog/wp-content/uploads/2015/06/54d40cf6526b3900x.jpg',
+      NAME: 'Ball Gown',
     },
   },
   TOOLTIP: {

@@ -44,7 +44,7 @@ class SurveyItemWeddingDate extends React.Component {
 
   render() {
     return (
-      <div  style={{ textAlign: 'center' }}>
+      <div  style={{textAlign: 'center'}}>
         <h2 style={{marginBottom: '20px'}}>{LABELS.WEDDING_DATE}</h2>
         <h3 style={{marginBottom: '20px'}}>{DESCRIPTION.WEDDING_DATE}</h3>
         <form className='date' noValidate>
@@ -64,7 +64,7 @@ class SurveyItemWeddingDate extends React.Component {
           </div>
         )}
         <Button
-          style={{marginLeft: '30px', marginTop: '30px', marginRight: '20px'}}
+          style={{marginLeft: '30px', marginRight: '20px', marginTop: '30px'}}
           onClick={() => {this.handleSkip()}}
         >
           {BUTTON.SKIP_FOR_NOW}
@@ -72,7 +72,7 @@ class SurveyItemWeddingDate extends React.Component {
         <Button
           onClick={() => this.handleSubmit()}
           variant="contained"
-          style={{marginTop: '30px', marginRight: '30px'}}
+          style={{marginRight: '30px', marginTop: '30px'}}
         >
           {BUTTON.SUBMIT}
         </Button>

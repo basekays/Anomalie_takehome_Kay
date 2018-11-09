@@ -16,9 +16,9 @@ class SurveyItemBudget extends React.Component {
       <ListItem style={{display:'flex', justifyContent:'center'}} key={range}>
         <Button
           fullWidth={true}
-          variant="outlined"
-          size="large"
           onClick={() => {this.handleClick(range)}}
+          size="large"
+          variant="outlined"
         >
           {BUDGET[range]}
         </Button>
