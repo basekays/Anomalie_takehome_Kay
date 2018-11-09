@@ -8,9 +8,9 @@ const SurveyFormConstants = {
   },
   BUTTON: {
     EDIT_BUDGET: 'Edit Budget',
-    SUBMIT: 'Submit',
     SAVE_AND_CONTINUE: 'Save and Continue',
     SKIP_FOR_NOW: 'Skip for now',
+    SUBMIT: 'Submit',
   },
   DEFAULT: '',
   DESCRIPTION: {
@@ -25,8 +25,9 @@ const SurveyFormConstants = {
   },
   MESSAGE: {
     BUDGET: '*Different styles are available based on the budget.',
-    SAVED: 'Saved successfully!',
     COMPLETE: 'Thank you for sharing the details with us.',
+    SAVED: 'Saved successfully!',
+    NEXT_STEP: 'Please schedule a call with our representative, where magic begins!',
   },
   NAME: 'A N O M A L I E',
   NOT_AVAILABLE: 'N/A',
@@ -40,17 +41,21 @@ const SurveyFormConstants = {
       IMG: 'https://ms-cdn.maggiesottero.com/product/Content/Images/73532/Large/Maggie-Sottero-Wedding-Dress-Callie-7MS359-Main.jpg',
     },
     A_LINE: {
-      NAME: 'A-Line (*Available from $1,200)',
+      NAME: 'A-Line',
       IMG: 'https://www.bridesselection.com.au/wp-content/uploads/2017/07/MaggieSottero-Morocco-7MN902.jpg',
     },
     BALL_GOWN: {
-      NAME: 'Ball Gown (*Available from $2,000)',
+      NAME: 'Ball Gown',
       IMG: 'https://www.topweddingsites.com/wedding-blog/wp-content/uploads/2015/06/54d40cf6526b3900x.jpg',
     },
   },
   TOOLTIP: {
     ADD: 'Add',
     REMOVE: 'Remove',
+  },
+  WARNING: {
+    CUTOFF: 'The date submitted is less than 7 months away, which is our cutoff.',
+    RECOMMENDATION: 'Please submit this form, and consult with us!',
   },
 }
 

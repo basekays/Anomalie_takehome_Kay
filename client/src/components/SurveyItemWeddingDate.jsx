@@ -3,7 +3,16 @@ import React, { Component } from 'react';
 import SurveyFormConstants from '../constants/SurveyFormConstants';
 import TextField from '@material-ui/core/TextField';
 
-const { BUTTON, DEFAULT, DESCRIPTION, LABELS, NOT_AVAILABLE } = SurveyFormConstants;
+const {
+  BUTTON,
+  DEFAULT,
+  DESCRIPTION,
+  LABELS,
+  NOT_AVAILABLE,
+  WARNING
+} = SurveyFormConstants;
+
+const today = new Date().toISOString().split('T')[0];
 
 // Default date on the date picker
 let defaultDate = new Date();
@@ -12,7 +21,7 @@ defaultDate = defaultDate.toISOString().split('T')[0];
 
 class SurveyItemWeddingDate extends React.Component {
   state = {
-    weddingDate: '',
+    weddingDate: null,
   }
 
   handleSubmit() {
@@ -41,13 +50,19 @@ class SurveyItemWeddingDate extends React.Component {
         <form className='date' noValidate>
           <TextField
             className='weddingDate'
-            defaultValue={defaultDate}
+            defaultValue={today}
             id="date"
             onChange={this.handleChange}
             style={{marginTop: '30px'}}
             type="date"
           />
         </form>
+        {this.state.weddingDate <= defaultDate && (
+          <div style={{marginTop: '20px'}}>
+            <h5>{WARNING.CUTOFF}</h5>
+            <h5>{WARNING.RECOMMENDATION}</h5>
+          </div>
+        )}
         <Button
           style={{marginLeft: '30px', marginTop: '30px', marginRight: '20px'}}
           onClick={() => {this.handleSkip()}}

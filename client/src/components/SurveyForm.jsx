@@ -77,7 +77,8 @@ class SurveyForm extends React.Component {
       return (
         <div style={{ textAlign: 'center', marginTop: '30px', marginBottom: '30px'}}>
           <h2>{MESSAGE.SAVED}</h2>
-          <h3>{MESSAGE.COMPLETE}</h3>
+          <h5>{MESSAGE.COMPLETE}</h5>
+          <h5>{MESSAGE.NEXT_STEP}</h5>
         </div>
       )
     }
