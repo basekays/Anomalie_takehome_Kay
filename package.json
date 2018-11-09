@@ -4,9 +4,11 @@
   "description": "Affirm Take Home Front End Coding Challenge",
   "main": "index.js",
   "scripts": {
-    "start": "concurrently \"npm run server\" \"npm run build\"",
-    "build": "webpack -d --watch",
+    "start": "node server",
+    "dev": "concurrently \"npm run server\" \"npm run build\"",
     "server": "node server",
+    "build": "webpack -d --watch",
+    "heroku-postbuild": "webpack -p --config ./webpack.prod.config.js --progress",
     "test": "jest"
   },
   "repository": {
