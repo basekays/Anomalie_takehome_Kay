@@ -118,9 +118,14 @@ class SurveyItemSilhouette extends React.Component {
         <h3 style={{marginBottom: '20px'}}>{DESCRIPTION.SILHOUETTE}</h3>
         {
           this.props.budget == 'RANGE_1'
-          ? (<h6>{MESSAGE.MISSING_TWO_SILHOUETTES}</h6>)
+          ? (
+              <div>
+                <h6>{MESSAGE.MISSING_A_LINE_GOWN}</h6>
+                <h6>{MESSAGE.MISSING_BALL_GOWN}</h6>
+              </div>
+            )
           : this.props.budget == 'RANGE_2' || this.props.budget == 'RANGE_3'
-            ? (<h6>{MESSAGE.MISSING_ONE_SILHOUETTES}</h6>)
+            ? (<h6>{MESSAGE.MISSING_BALL_GOWN}</h6>)
             : null
         }
         <GridList>

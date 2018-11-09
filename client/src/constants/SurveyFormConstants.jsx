@@ -28,8 +28,8 @@ const SurveyFormConstants = {
     COMPLETE: 'Thank you for sharing the details with us.',
     NEXT_STEP: 'Please schedule a call with our representative, where magic begins!',
     SAVED: 'Saved successfully!',
-    MISSING_ONE_SILHOUETTES: '*Ball Gowns are available from $2,000.',
-    MISSING_TWO_SILHOUETTES: '*A-Line Gowns and Ball Gowns are available from $1,200 and $2,000, respectively.',
+    MISSING_BALL_GOWN: '*Ball Gowns are available from $2,000.',
+    MISSING_A_LINE_GOWN: '*A-Line Gowns are available from $1,200.',
   },
   NAME: 'A N O M A L I E',
   NOT_AVAILABLE: 'N/A',
@@ -39,7 +39,7 @@ const SurveyFormConstants = {
       IMG: 'https://www.lulusbridal.com/wp-content/uploads/2017/09/Maggie-Sottero-Wedding-Dress-Kirstie-6MS193-alt1.jpg',
     },
     FIT_FLARE: {
-      NAME: 'Fit and Flare',
+      NAME: 'Fit-Flare',
       IMG: 'https://ms-cdn.maggiesottero.com/product/Content/Images/73532/Large/Maggie-Sottero-Wedding-Dress-Callie-7MS359-Main.jpg',
     },
     A_LINE: {

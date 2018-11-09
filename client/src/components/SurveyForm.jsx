@@ -101,7 +101,7 @@ class SurveyForm extends React.Component {
           <Grid container spacing={24} justify='center'>
             <Grid item xs={12} sm={12} md={10} lg={6}>
               <Grid>
-                <Card className='card'>
+                <Card className='card' style={{marginTop: '10px'}}>
                   <CardContent>
                     <Typography variant="h6" color="inherit">
                       {this.renderSurveyItems()}
