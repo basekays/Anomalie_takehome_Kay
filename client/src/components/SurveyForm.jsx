@@ -84,7 +84,6 @@ class SurveyForm extends React.Component {
   }
 
   render() {
-    console.log(this.state);
     const { budget, silhouette, weddingDate, completionRate} = this.state;
     return (
       <div style={{backgroundColor: "#f4f2f0ff"}}>
