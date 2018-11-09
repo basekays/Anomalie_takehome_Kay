@@ -1,7 +1,8 @@
 import AppBar from '@material-ui/core/AppBar';
 import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
-import { Grid } from 'semantic-ui-react';
+// import { Grid } from 'semantic-ui-react';
+import Grid from '@material-ui/core/Grid';
 import ProgressBar from './ProgressBar';
 import React, { Component } from 'react';
 import SurveyFormConstants from '../constants/SurveyFormConstants';
@@ -96,19 +97,21 @@ class SurveyForm extends React.Component {
           </Toolbar>
         </AppBar>
         <ProgressBar activeStep={this.state.activeStep}/>
-        <Grid centered columns={1} padded='vertically'>
-          <Grid.Row>
-            <Grid.Column width={8}>
-              <Card className='card'>
-                <CardContent>
-                  <Typography variant="h6" color="inherit">
-                    {this.renderSurveyItems()}
-                  </Typography>
-                </CardContent>
-              </Card>
-            </Grid.Column>
-          </Grid.Row>
-        </Grid>
+        <div style={{flexGrow: 1}}>
+          <Grid container spacing={24} justify='center'>
+            <Grid item xs={12} sm={12} md={10} lg={6}>
+              <Grid>
+                <Card className='card'>
+                  <CardContent>
+                    <Typography variant="h6" color="inherit">
+                      {this.renderSurveyItems()}
+                    </Typography>
+                  </CardContent>
+                </Card>
+              </Grid>
+            </Grid>
+          </Grid>
+        </div>
       </div>
     )
   }

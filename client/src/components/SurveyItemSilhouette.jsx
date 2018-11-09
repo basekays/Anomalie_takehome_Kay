@@ -15,6 +15,7 @@ const {
   BUTTON,
   DESCRIPTION,
   LABELS,
+  MESSAGE,
   NOT_AVAILABLE,
   SILHOUETTE,
   TOOLTIP,
@@ -115,6 +116,13 @@ class SurveyItemSilhouette extends React.Component {
       <div style={{ textAlign: 'center' }}>
         <h2 style={{marginBottom: '20px'}}>{LABELS.SILHOUETTE}</h2>
         <h3 style={{marginBottom: '20px'}}>{DESCRIPTION.SILHOUETTE}</h3>
+        {
+          this.props.budget == 'RANGE_1'
+          ? (<h6>{MESSAGE.MISSING_TWO_SILHOUETTES}</h6>)
+          : this.props.budget == 'RANGE_2' || this.props.budget == 'RANGE_3'
+            ? (<h6>{MESSAGE.MISSING_ONE_SILHOUETTES}</h6>)
+            : null
+        }
         <GridList>
           {this.renderOptions(this.props.budget)}
         </GridList>

@@ -26,8 +26,10 @@ const SurveyFormConstants = {
   MESSAGE: {
     BUDGET: '*Different styles are available based on the budget.',
     COMPLETE: 'Thank you for sharing the details with us.',
-    SAVED: 'Saved successfully!',
     NEXT_STEP: 'Please schedule a call with our representative, where magic begins!',
+    SAVED: 'Saved successfully!',
+    MISSING_ONE_SILHOUETTES: '*Ball Gowns are available from $2,000.',
+    MISSING_TWO_SILHOUETTES: '*A-Line Gowns and Ball Gowns are available from $1,200 and $2,000, respectively.',
   },
   NAME: 'A N O M A L I E',
   NOT_AVAILABLE: 'N/A',
