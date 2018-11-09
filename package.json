@@ -38,7 +38,7 @@
   },
   "devDependencies": {
     "babel-jest": "^23.6.0",
-    "concurrently": "^3.5.1",
+    "concurrently": "^3.6.1",
     "enzyme": "^3.7.0",
     "enzyme-adapter-react-16": "^1.7.0",
     "jest": "^23.6.0",
