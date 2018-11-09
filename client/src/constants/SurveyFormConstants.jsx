@@ -16,7 +16,7 @@ const SurveyFormConstants = {
   DESCRIPTION: {
     BUDGET: 'What is your budget for the gown?',
     SILHOUETTE: 'Which silhouette(s) do you like the most?',
-    WEDDING_DATE: 'Great! When was the happy day again?',
+    WEDDING_DATE: 'Great! When was that happy day again?',
   },
   LABELS: {
     BUDGET:'Budget',
