@@ -88,7 +88,7 @@ class SurveyForm extends React.Component {
     const { budget, completionRate, silhouette, weddingDate} = this.state;
     return (
       <div style={{backgroundColor: "#f4f2f0ff"}}>
-        <AppBar color="white" position="relative">
+        <AppBar color="default" position="relative">
           <Toolbar style={{marginLeft: 'auto', marginRight: 'auto'}}>
             <Typography color="inherit" variant="h6">
               {NAME}
