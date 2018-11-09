@@ -1,12 +1,12 @@
 {
-  "name": "affirm_kay",
+  "name": "Anomalie_takehome_kay",
   "version": "1.0.0",
   "description": "Affirm Take Home Front End Coding Challenge",
   "main": "index.js",
   "scripts": {
-    "start": "node server",
+    "start": "node server/index.js",
     "dev": "concurrently \"npm run server\" \"npm run build\"",
-    "server": "node server",
+    "server": "node server/index.js",
     "build": "webpack -d --watch",
     "heroku-postbuild": "webpack -p --config ./webpack.prod.config.js --progress",
     "test": "jest"
@@ -37,6 +37,7 @@
     "redux": "^4.0.0",
     "redux-thunk": "^2.2.0",
     "semantic-ui-react": "^0.82.5",
+    "uglifyjs-webpack-plugin": "^2.0.1",
     "webpack": "^4.8.3",
     "webpack-cli": "^2.1.3"
   },

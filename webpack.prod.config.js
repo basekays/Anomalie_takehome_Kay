@@ -1,5 +1,6 @@
 var webpack = require('webpack');
 var path = require('path');
+var UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 
 var SRC_DIR = path.join(__dirname, '/client/src');
 var DIST_DIR = path.join(__dirname, '/client/dist');
@@ -23,6 +24,9 @@ var config = {
   },
   resolve: {
     extensions: ['.js', '.jsx'],
+  },
+  optimization: {
+    minimizer: [new UglifyJsPlugin()]
   }
 };
 
